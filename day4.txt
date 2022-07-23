@@ -1,0 +1,110 @@
+
+Que1::what is a Temporal Dead Zone
+ The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable
+ with the let and const keywords, but not with var. In ECMAScript 6,  if accessing a let or const 
+ variable before its declaration (within its scope) causes a ReferenceError. The time span 
+ when that happens, between the creation of a variable’s binding and its declaration, is 
+ called the temporal dead zone.
+   
+
+Que2::what is an for in loop in javascript.Give an syntax
+
+Ans::The for..in loop in JavaScript allows you to iterate over all property keys of an object.
+In each iteration of the loop, a key is assigned to the key variable. The loop continues 
+for all object properties
+
+syntax::
+const string = 'code'; 
+ for (let i in string) {
+
+ console.log(string[i]);
+  }
+
+
+
+Que3::what is symbol.
+Ans::Symbol is a primitive data type of JavaScript, along with string, number, boolean, null and 
+undefined. It was introduced in ECMAScript 2015, so just a few years ago. It's a very peculiar
+ data type. Once we create a symbol, its value is kept private and for internal use
+
+
+
+Que4::explain Local scope,Block scoped,function scope,scope chain in java script.
+
+Local scope::
+Local Scope occurs when you create a variable inside a function. By doing that, the visibility and
+ accessibility of the variable is only allowed within that function
+
+Block scoped: A block scoped variable means that the variable defined within a block will not be
+accessible from outside the block. A block can reside inside a function, and a block scoped variable
+will not be available outside the block even if the block is inside a function.
+
+function scope: Each function creates a new scope. Variables defined inside a function are not 
+accessible (visible) from outside the function. Variables declared with var , let and const are 
+quite similar when declared inside a function.
+
+scope chain::The scope chain is used to resolve the value of variable names in javascript.
+Without a scope chain the Javascript engine wouldn't know which value to pick for a certain variable
+name if there are multiple defined at different scopes.
+
+
+
+Que5::write code to explain map()anf filter in array.
+ans::
+Map()::
+const numbers = [1, 2, 3, 4]; 
+const doubled = numbers.map(item => item * 2);
+ console.log(doubled);
+
+Filter()::
+const students = [ { name: 'Sanket', grade: 96 }, { name: 'Vaibhav', grade: 84 },]; 
+const studentGrades = students.filter(student => student.grade >= 90); 
+return studentGrades; 
+
+
+Que6::explain passed by value and passed by refference.
+Ans::
+Passed by value::
+"Passing by value" means that you pass the actual value of the variable into the function.
+Passed by  refference::
+"Passing by reference" means that you pass the variable itself into the function (not just the value). 
+
+
+Que7::please explain self Invoking Function and its code.
+Ans::
+Self-Invoking Functions::
+
+A self-invoking expression is invoked (started) automatically, without being called. 
+Function expressions will execute automatically if the expression is followed by ().
+ we cannot self-invoke a function declaration.
+(function () {
+  let x = "Hello!!";  // It will invoke myself
+})();
+
+
+
+Que8::what is the diffierence between null and undefined and where to use what.
+
+
+
+
+Null::
+1] It is an assignment value which indicates that variable points to no object.
+2] Type of null is object.
+3] The null value is a primitive value that represents the null, empty, or non-existent reference.
+4] Indicates the absence of a value for a variable.
+
+use::
+JavaScript uses the null value to represent a missing object. Use the strict equality operator
+( ===) to check if a value is null. 
+
+Undefined::
+1] It is not an assignment value where a variable has been declared but has not yet been assigned a value.
+2] Type of undefined is undefined.
+3] The undefined value is a primitive value used when a variable has not been assigned a value.
+4] Indicates absence of variable itself.
+
+use::
+Undefined is a keyword in JavaScript that is related to memory space. Everything in JS which gets a 
+space in memory is assigned Undefined until the memory space is initialized.
+
